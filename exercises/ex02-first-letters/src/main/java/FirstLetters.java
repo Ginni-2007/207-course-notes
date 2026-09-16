@@ -1,3 +1,5 @@
+import java.beans.PropertyEditorSupport;
+
 /**
  * Exercise (Chapter 1: Introduction to Java) — Strings and StringBuilder.
  *
@@ -25,7 +27,13 @@ public class FirstLetters {
      * @return the first character of each word, concatenated
      */
     public static String firstLetters(String words) {
-        // TODO: complete
-        return "";
+        StringBuilder word = new StringBuilder();
+        word.append(words.charAt(0));
+        for (int i = 0; i < words.length(); i++){
+            if (words.charAt(i) == ' '){
+                word.append(words.charAt(i + 1));
+            }
+        }
+        return word.toString();
     }
 }
