@@ -20,6 +20,7 @@ public class MyHashing {
   /** Creates a MyHashing whose seed starts at 0. */
   public MyHashing() {
     // TODO: this constructor takes no arguments; leave the seed at its default.
+    
   }
 
   /**
